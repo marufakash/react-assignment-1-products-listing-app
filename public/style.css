@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+}
+.heading {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #0c6168;
+}
+.products {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media screen and (min-width: 500px) {
+    .products {
+        grid-template-columns: auto;
+    }
+}
+@media screen and (min-width: 800px) {
+    .products {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .products {
+        grid-template-columns: auto auto auto;
+    }
+}
